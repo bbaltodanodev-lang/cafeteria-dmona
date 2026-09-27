@@ -1,0 +1,85 @@
+# ==========================================
+# cafeteria-dmona - .gitignore
+# ==========================================
+
+# ---------- Dependencies ----------
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+bower_components/
+
+# ---------- Build output ----------
+dist/
+build/
+.next/
+out/
+.cache/
+.parcel-cache/
+.turbo/
+
+# ---------- Environment variables & secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials.json
+secrets.json
+.id_rsa
+id_rsa
+id_dsa
+.id_ed25519
+.netrc
+
+# ---------- Hosting / platform ----------
+.vercel
+.netlify
+.wrangler
+.firebase
+.serverless
+
+# ---------- Logs ----------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Temp / OS files ----------
+tmp
+temp
+.temp
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
+*~
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------- Editors / IDEs ----------
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.history/
+*.sublime-project
+*.sublime-workspace
